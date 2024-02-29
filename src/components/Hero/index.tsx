@@ -1,13 +1,12 @@
-//import styles from './Hero.module.css'
-import { FormHero, TitleHero, DivHero } from './styles'
+import { FormHero, TitleHero } from './styles'
 
 const Hero = () => (
   <FormHero>
-    <DivHero>
+    <div className="container">
       <TitleHero>
         As melhores vagas para tecnologia, design e artes visuais.
       </TitleHero>
-    </DivHero>
+    </div>
   </FormHero>
 )
 

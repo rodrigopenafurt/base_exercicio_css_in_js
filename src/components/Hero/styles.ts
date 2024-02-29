@@ -9,7 +9,7 @@ export const FormHero = styled.form`
   display: flex;
   align-items: center;
 
-  &::before {
+  ::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -20,22 +20,24 @@ export const FormHero = styled.form`
     opacity: 0.7;
   }
 
+  div {
+    position: relative;
+    color: #eee;
+  }
+
   @media (max-width: 768px) {
-    height: auto;
-    padding: 24px 0;
+    .form {
+      height: auto;
+      padding: 24px 0;
+    }
+
+    .heroTitle {
+      font-size: 32px;
+    }
   }
 `
 
 export const TitleHero = styled.h2`
   font-family: Gloock, serif;
   font-size: 48px;
-
-  @media (max-width: 768px) {
-    font-size: 32px;
-  }
-`
-
-export const DivHero = styled.div`
-  position: relative;
-  color: #eee;
 `
